@@ -1,5 +1,14 @@
 .slider {
-    height: 700px;
-    width: 700px;
     position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.imagesWrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }

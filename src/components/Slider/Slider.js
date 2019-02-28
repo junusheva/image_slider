@@ -9,21 +9,27 @@ class Slider extends Component {
 
     state = {
         images: imageUrls,
-        curIndex: 0,
+        currentIndex: 0,
         translateValue: 0
     };
 
     goToPrevSlide = () => {
+        console.log(this.state.images);
+        if(this.state.currentIndex === 0) {
+            return this.setState({
+                currentIndex: this.state.images.length - 1,
+                translateValue: 0
+            })
+        }
+
         this.setState(prevState => ({
-            curIndex: prevState.curIndex !== 0 ? prevState.curIndex - 1 : prevState.images.length
-        }))
+            currentIndex: prevState.currentIndex + 1,
+            translateValue: prevState.translateValue + (this.slideWidth())
+        }));
     };
 
     goToNextSlide = () => {
-        this.setState(prevState => ({
-            curIndex: prevState.curIndex !== prevState.images.length ? prevState.curIndex + 1 : 0
-        }))
-
+        console.log(this.state.translateValue, this.state.currentIndex);
         if(this.state.currentIndex === this.state.images.length - 1) {
             return this.setState({
                 currentIndex: 0,
@@ -31,7 +37,6 @@ class Slider extends Component {
             })
         }
 
-        // This will not run if we met the if condition above
         this.setState(prevState => ({
             currentIndex: prevState.currentIndex + 1,
             translateValue: prevState.translateValue + -(this.slideWidth())
@@ -45,12 +50,13 @@ class Slider extends Component {
 
     render() {
         return (
-            <div className="Slider">
+            <div className="slider">
                 <div
                     className="imagesWrapper"
                     style={{
                         transform: `translateX(${this.state.translateValue}px)`,
-                        transition: 'transform ease-out 0.45s'
+                        transition: 'transform ease-out 0.45s',
+                        position: 'relative'
                     }}
                 >
                     {
@@ -61,7 +67,7 @@ class Slider extends Component {
                 </div>
 
                 <LeftArrow goToPrevSlide={this.goToPrevSlide}/>
-                <RightArrow gotToNextSlide={this.goToNextSlide}/>
+                <RightArrow goToNextSlide={this.goToNextSlide}/>
             </div>
         );
     }
