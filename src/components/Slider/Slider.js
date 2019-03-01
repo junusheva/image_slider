@@ -11,7 +11,10 @@ class Slider extends Component {
     state = {
         images: imageUrls,
         currentIndex: 0,
-        translateValue: 0
+        translateValue: 0,
+        autoplayOn: window.setInterval(() => {
+            this.goToNextSlide()
+        }, 3000)
     };
 
     goToPrevSlide = () => {
