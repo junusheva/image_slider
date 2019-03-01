@@ -9,4 +9,5 @@ jobs:
       - run: npm test
       - run: echo "Tests passed!"
       - run: npm build
+      - run: mv build/index.html ./
 
