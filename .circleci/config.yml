@@ -1,3 +1,6 @@
+  CURRENT_DIR="$(pwd)"
+  TESTS_DIR=$CURRENT_DIR
+
 version: 2
 jobs:
   build:
