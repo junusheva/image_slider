@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:  echo "Hello, Aijan!"
-      - run: ls
+      - run: echo $(pwd)
       - run: yarn react-scripts test
       - run: echo "Tests passed!"
 
