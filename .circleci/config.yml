@@ -9,6 +9,6 @@ jobs:
       - run: echo $(pwd)
       - run: echo $(ls)
       - run: cd src
-      - run: yarn react-scripts test
+      - run: npm run react-scripts test
       - run: echo "Tests passed!"
 
