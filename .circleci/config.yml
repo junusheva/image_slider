@@ -8,6 +8,7 @@ jobs:
       - run:  echo "Hello, Aijan!"
       - run: echo $(pwd)
       - run: echo $(ls)
+      - run: cd src
       - run: yarn react-scripts test
       - run: echo "Tests passed!"
 
