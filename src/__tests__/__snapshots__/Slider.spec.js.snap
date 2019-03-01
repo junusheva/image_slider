@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider /> creates a slider in an initial state 1`] = `
+<div
+  className="slider"
+>
+  <div
+    className="imagesWrapper"
+    style={
+      Object {
+        "transform": "translateX(0px)",
+        "transition": "transform ease-out 0.45s",
+      }
+    }
+  >
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://www.digitalcare.org/wp-content/uploads/2016/11/Free-Desktop-Wallpaper-feature.jpg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.shopify.com/s/files/1/0901/0816/products/Beautifully_Stranded_Desktop_1_2048x.JPG?v=1500905812)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-26.jpg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.cultofmac.com/wp-content/uploads/2019/01/A30A73E0-4AC8-412B-9803-557D2310BDDE.1af271bf674941aabb417ca24b32d194-780x566.jpeg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://static1.squarespace.com/static/552b1764e4b03cff36ace4b2/5a46c25424a694278eb57e34/5a46c4e2c83025f8444ca9b8/1514682496976/2017_September17.jpg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.newsapi.com.au/image/v1/06e4a0f5221e045e88ba3c707e1e7949)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+  </div>
+  <div
+    className="leftArrow"
+    onClick={[Function]}
+  >
+    <i
+      className="fas fa-angle-left"
+    />
+  </div>
+  <div
+    className="rightArrow"
+    onClick={[Function]}
+  >
+    <i
+      className="fas fa-angle-right"
+    />
+  </div>
+  <div
+    className="dotsWrapper"
+  >
+    <div
+      className="clickedDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<Slider /> creates a slider in an initial state 2`] = `
+<div
+  className="slider"
+>
+  <div
+    className="imagesWrapper"
+    style={
+      Object {
+        "transform": "translateX(0px)",
+        "transition": "transform ease-out 0.45s",
+      }
+    }
+  >
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://www.digitalcare.org/wp-content/uploads/2016/11/Free-Desktop-Wallpaper-feature.jpg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.shopify.com/s/files/1/0901/0816/products/Beautifully_Stranded_Desktop_1_2048x.JPG?v=1500905812)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-26.jpg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.cultofmac.com/wp-content/uploads/2019/01/A30A73E0-4AC8-412B-9803-557D2310BDDE.1af271bf674941aabb417ca24b32d194-780x566.jpeg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://static1.squarespace.com/static/552b1764e4b03cff36ace4b2/5a46c25424a694278eb57e34/5a46c4e2c83025f8444ca9b8/1514682496976/2017_September17.jpg)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+    <div
+      className="slide"
+      style={
+        Object {
+          "backgroundImage": "url(https://cdn.newsapi.com.au/image/v1/06e4a0f5221e045e88ba3c707e1e7949)",
+          "backgroundPosition": "50% 60%",
+          "backgroundRepeat": "no-repeat",
+          "backgroundSize": "cover",
+        }
+      }
+    />
+  </div>
+  <div
+    className="leftArrow"
+    onClick={[Function]}
+  >
+    <i
+      className="fas fa-angle-left"
+    />
+  </div>
+  <div
+    className="rightArrow"
+    onClick={[Function]}
+  >
+    <i
+      className="fas fa-angle-right"
+    />
+  </div>
+  <div
+    className="dotsWrapper"
+  >
+    <div
+      className="clickedDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+    <div
+      className="inactiveDot"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
