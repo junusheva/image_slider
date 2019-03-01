@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
-import './Slider.css';
+
+import Dots from "../Dots/Dots";
 import Slide from "../Slide/Slide";
 import LeftArrow from "../Arrows/LeftArrow";
 import RightArrow from "../Arrows/RightArrow";
+
+import './Slider.css';
+
+//An array of image urls
 import imageUrls from "./imagesArray.js";
-import Dots from "../Dots/Dots";
 
 class Slider extends Component {
 
@@ -14,7 +18,7 @@ class Slider extends Component {
         translateValue: 0,
         autoplayOn: window.setInterval(() => {
             this.goToNextSlide()
-        }, 3000)
+        }, 5000)
     };
 
     goToPrevSlide = () => {
