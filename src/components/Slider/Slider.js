@@ -4,6 +4,7 @@ import Slide from "../Slide/Slide";
 import LeftArrow from "../Arrows/LeftArrow";
 import RightArrow from "../Arrows/RightArrow";
 import imageUrls from "./imagesArray.js";
+import Dots from "../Dots/Dots";
 
 class Slider extends Component {
 
@@ -44,6 +45,14 @@ class Slider extends Component {
 
     };
 
+    handleDotClick = index => {
+        console.log("handleDotClick");
+        return this.setState({
+            currentIndex: index,
+            translateValue:  -(this.slideWidth())* (index)
+        })
+    };
+
     slideWidth = () => {
         return document.querySelector('.slide').clientWidth
     };
@@ -56,7 +65,6 @@ class Slider extends Component {
                     style={{
                         transform: `translateX(${this.state.translateValue}px)`,
                         transition: 'transform ease-out 0.45s',
-                        // position: 'relative'
                     }}
                 >
                     {
@@ -68,6 +76,11 @@ class Slider extends Component {
 
                 <LeftArrow goToPrevSlide={this.goToPrevSlide}/>
                 <RightArrow goToNextSlide={this.goToNextSlide}/>
+                <Dots
+                    images={this.state.images}
+                    activeImageIndex={this.state.currentIndex}
+                    handleDotClick={this.handleDotClick}
+                />
             </div>
         );
     }
