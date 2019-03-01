@@ -8,6 +8,7 @@ jobs:
       - run:  echo "Hello, Aijan!"
       - run: echo $(pwd)
       - run: echo $(ls)
+      - run: npm install -g yarn
       - run: cd src
       - run: yarn test
       - run: echo "Tests passed!"
