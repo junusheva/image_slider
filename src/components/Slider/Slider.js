@@ -56,7 +56,7 @@ class Slider extends Component {
                     style={{
                         transform: `translateX(${this.state.translateValue}px)`,
                         transition: 'transform ease-out 0.45s',
-                        position: 'relative'
+                        // position: 'relative'
                     }}
                 >
                     {
