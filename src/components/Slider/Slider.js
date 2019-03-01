@@ -18,12 +18,12 @@ class Slider extends Component {
         if(this.state.currentIndex === 0) {
             return this.setState({
                 currentIndex: this.state.images.length - 1,
-                translateValue: 0
+                translateValue:  -(this.slideWidth())* (this.state.images.length - 1)
             })
         }
 
         this.setState(prevState => ({
-            currentIndex: prevState.currentIndex + 1,
+            currentIndex: prevState.currentIndex - 1,
             translateValue: prevState.translateValue + (this.slideWidth())
         }));
     };
