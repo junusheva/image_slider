@@ -1,3 +1,6 @@
+  CURRENT_DIR="$(pwd)"
+  TESTS_DIR=$CURRENT_DIR
+
 version: 2
 jobs:
   build:
@@ -6,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run:  echo "Hello, Aijan!"
-      - run: cd ../src
+      - run: ls
       - run: yarn react-scripts test
       - run: echo "Tests passed!"
 
