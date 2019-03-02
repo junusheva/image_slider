@@ -4,14 +4,25 @@ jobs:
     docker:
       - image: circleci/node:11.10.0
     steps:
-      - add_ssh_keys:
-            fingerprints:
-              - "91:3e:b4:c4:4e:f5:d7:ad:e6:e9:9d:c3:54:3d:68:0c"
       - checkout
-      - run: yarn install
-      - run: yarn test
+      - attach_workspace:
+          at: docs/_build
+      - run:
+          name: Disable jekyll builds
+          command: touch docs/_build/html/.nojekyll
+      - run: npm install
+      - run: npm run test
       - run: echo "Tests passed!"
-      - run: yarn run deploy
-      - run: echo "The app is deployed!"
-
+      - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@2.0.1
+            git config user.email "aikojune@gmail.com"
+            git config user.name "junusheva"
+      - add_ssh_keys:
+          fingerprints:
+            - "91:3e:b4:c4:4e:f5:d7:ad:e6:e9:9d:c3:54:3d:68:0c"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist docs/_build/html
 
