@@ -5,11 +5,9 @@ jobs:
       - image: circleci/node:11.10.0
     steps:
       - checkout
-      - attach_workspace:
-          at: docs/_build
       - run:
           name: Disable jekyll builds
-          command: touch docs/_build/html/.nojekyll
+          command: touch .nojekyll
       - run: npm install
       - run: npm run test
       - run: echo "Tests passed!"
@@ -24,5 +22,5 @@ jobs:
             - "91:3e:b4:c4:4e:f5:d7:ad:e6:e9:9d:c3:54:3d:68:0c"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist docs/_build/html
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist build/*
 
