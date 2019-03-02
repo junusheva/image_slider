@@ -1,6 +1,7 @@
 # Image slider
 Front-end part of an image carousel built using React.
-![image slider gif](image_slider.gif)
+
+![image slider gif](slider_demo.gif)
 
 You can also view the working demo on https://junusheva.github.io/image_slider/
 
