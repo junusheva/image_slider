@@ -8,6 +8,7 @@ jobs:
       - run: cd slider_front
       - run: npm install
       - run: cd slider_front
+      - run: ls
       - run: npm test
       - run: echo "Tests passed!"
 
