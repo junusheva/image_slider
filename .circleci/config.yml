@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:6.10.3
     steps:
       - checkout
+      - run: cd slider_front
       - run: npm install
       - run: npm test
       - run: echo "Tests passed!"
