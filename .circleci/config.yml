@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:6.10.3
+      - image: circleci/node:11.10.0
     steps:
       - add_ssh_keys:
             fingerprints:
