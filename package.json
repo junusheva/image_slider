@@ -15,7 +15,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages --dotfiles --message \"[skip ci] Updates\" --dist build/*"
   },
   "eslintConfig": {
     "extends": "react-app"
