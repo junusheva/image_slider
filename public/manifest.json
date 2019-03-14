@@ -3,9 +3,14 @@
   "name": "A simple image slider with buttons",
   "icons": [
     {
-      "src": "favicon.png",
-      "sizes": "3000x27896",
-      "type": "image/png"
+      "src": "favicon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
