@@ -18,7 +18,7 @@ class Slider extends Component {
         translateValue: 0,
         autoplayOn: window.setInterval(() => {
             this.goToNextSlide()
-        }, 5000)
+        }, 10000)
     };
 
     goToPrevSlide = () => {
@@ -71,7 +71,7 @@ class Slider extends Component {
                     className="imagesWrapper"
                     style={{
                         transform: `translateX(${this.state.translateValue}px)`,
-                        transition: 'transform ease-out 0.45s',
+                        transition: 'transform ease-in 3s',
                     }}
                 >
                     {
