@@ -71,7 +71,7 @@ class Slider extends Component {
                     className="imagesWrapper"
                     style={{
                         transform: `translateX(${this.state.translateValue}px)`,
-                        transition: 'transform ease-in 3s',
+                        transition: 'transform ease-in 1s',
                     }}
                 >
                     {
