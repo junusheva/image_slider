@@ -1,3 +1,5 @@
+![Travis (.org)](https://img.shields.io/travis/junusheva/image_slider.svg)
+
 # Image slider
 Front-end part of an image carousel built using React.
 
