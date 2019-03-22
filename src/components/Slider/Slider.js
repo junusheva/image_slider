@@ -37,6 +37,7 @@ class Slider extends Component {
     };
 
     goToNextSlide = () => {
+        let {translateValue} = this.state;
         console.log(this.state.translateValue, this.state.currentIndex);
         if(this.state.currentIndex === this.state.images.length - 1) {
             return this.setState({
@@ -92,6 +93,7 @@ class Slider extends Component {
         );
     }
 }
+
 
 
 
