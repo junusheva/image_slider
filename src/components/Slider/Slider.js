@@ -22,11 +22,11 @@ class Slider extends Component {
     };
 
     goToPrevSlide = () => {
-        console.log(this.state.images);
-        if(this.state.currentIndex === 0) {
+        let {currentIndex, images} = this.state;
+        if(currentIndex === 0) {
             return this.setState({
-                currentIndex: this.state.images.length - 1,
-                translateValue:  -(this.slideWidth())* (this.state.images.length - 1)
+                currentIndex: images.length - 1,
+                translateValue:  -(this.slideWidth())* (images.length - 1)
             })
         }
 
@@ -37,9 +37,8 @@ class Slider extends Component {
     };
 
     goToNextSlide = () => {
-        let {translateValue} = this.state;
-        console.log(this.state.translateValue, this.state.currentIndex);
-        if(this.state.currentIndex === this.state.images.length - 1) {
+        let {currentIndex, images} = this.state;
+        if(currentIndex === images.length - 1) {
             return this.setState({
                 currentIndex: 0,
                 translateValue: 0
